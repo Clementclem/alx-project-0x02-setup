@@ -18,9 +18,8 @@ export interface PostProps {
 export interface UserProps {
   name: string;
   email: string;
-  address: {
-    street: string;
-    city: string;
-  };
+  address: string;
+  street: string;
+  city: string;
 }
 
