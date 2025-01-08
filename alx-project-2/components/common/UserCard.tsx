@@ -4,15 +4,12 @@ import { UserProps } from "../../interfaces";
 
 const UserCard: React.FC<UserProps> = ({ name, email, address }) => {
   return (
-    <div className="border p-4 rounded-lg shadow-lg">
-      <h2 className="text-xl font-bold">{name}</h2>
-      <p>Email: {email}</p>
-      <p>
-        Address: {address.street}, {address.city}
-      </p>
+    <div className="bg-white p-4 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold">{name}</h3>
+      <p className="text-sm">{email}</p>
+      <p className="text-sm">{address}</p>
     </div>
   );
 };
 
 export default UserCard;
-
